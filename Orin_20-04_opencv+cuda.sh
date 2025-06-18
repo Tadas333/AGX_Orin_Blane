@@ -12,7 +12,7 @@ cd VSCODE_FOR_JETSON
 
 sudo apt dist-upgrade
 sudo reboot
-sudo apt install nvidia-jetpack
+sudo apt install -y nvidia-jetpack
 
 
 sudo apt update
@@ -42,7 +42,7 @@ cmake     -D WITH_CUDA=ON \
         -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-4.5.4/modules \
         -D WITH_GSTREAMER=ON \
         -D WITH_LIBV4L=ON \
-        -D BUILD_opencv_python2=ON \
+        -D BUILD_opencv_python2=OFF \
         -D BUILD_opencv_python3=ON \
         -D BUILD_TESTS=OFF \
         -D BUILD_PERF_TESTS=OFF \
