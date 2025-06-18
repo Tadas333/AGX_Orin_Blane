@@ -6,13 +6,16 @@ sudo -H pip install -U jetson-stats
 
 sudo apt-get install nano
 
-git clone https://github.com/Tadas333/VSCODE_FOR_JETSON.git
-cd VSCODE_FOR_JETSON
-./install_VSCODE.sh
+#git clone https://github.com/Tadas333/VSCODE_FOR_JETSON.git
+#cd VSCODE_FOR_JETSON
+#./install_VSCODE.sh
+git clone https://github.com/jetsonhacks/installVSCode.git
+cd installVSCode
+./installVSCodeWithPython.sh
 
-sudo apt dist-upgrade
-sudo reboot
-sudo apt install -y nvidia-jetpack
+#sudo apt dist-upgrade
+#sudo reboot
+#sudo apt install -y nvidia-jetpack
 
 
 sudo apt update
